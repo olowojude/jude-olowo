@@ -1,0 +1,192 @@
+{
+  "title": "Projects",
+  "projects": [
+    {
+      "id": 1,
+      "title": "RxOra",
+      "status": "In Progress",
+      "link": "https://your-protokol-link.com",
+      "shortDesc": "A multi-vendor medication marketplace connecting PCN-verified pharmacies with buyers across Nigeria.",
+      "tags": ["Next.js", "Supabase", "PostgreSQL", "Cloudinary", "Paystack"],
+      "details": {
+        "initiative": "Accessing medications in Nigeria is often fragmented — patients visit multiple pharmacies, struggle to find specific drugs, and have no way to verify whether a seller is legitimate. There is no trusted, centralized platform for medication commerce.",
+        "challenge": "Building a marketplace for medications is fundamentally different from building one for regular goods. It requires pharmacy verification, prescription awareness, regulatory compliance, and a user experience that builds trust — not just a storefront.",
+        "solution": "RxOra is a multi-vendor marketplace where only PCN-verified pharmacies can list medications. Buyers can browse, cart, and order with delivery, while an admin layer ensures every seller has been reviewed and approved before they can transact. For prescription-only medications, buyers are required to upload a photo of their prescription before their order can be processed.",
+        "features": [
+          "Pharmacy verification layer — sellers must submit PCN license and ID before approval",
+          "Multi-vendor product listings with category and prescription filters",
+          "Prescription upload requirement for POM medications before order processing",
+          "Cart, checkout, and Paystack-powered payments",
+          "Seller dashboard for managing store locations, products, and incoming orders",
+          "Admin panel for reviewing applications, managing users, and overseeing the platform"
+        ],
+        "technicalHighlights": [
+          "Next.js App Router with SSR and ISR for fast, scalable product pages",
+          "Supabase for authentication, PostgreSQL database, and Row Level Security",
+          "Cloudinary for product images and sensitive document storage",
+          "Paystack webhook integration for payment confirmation and order fulfillment"
+        ],
+        "results": [
+          "Creates a trusted, verified channel for medication commerce in Nigeria",
+          "Reduces the risk of patients purchasing from unverified sources",
+          "Gives pharmacies a digital storefront with order management built in",
+          "Brings clinical awareness — like prescription flags — into the buying experience from day one"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "MedGuide NG",
+      "status": "Completed",
+      "link": "https://your-protokol-link.com",
+      "shortDesc": "A centralized clinical reference platform giving healthcare professionals instant access to evidence-based treatment protocols.",
+      "tags": ["Django", "Python", "PostgreSQL", "HTML/CSS"],
+      "details": {
+        "initiative": "In many healthcare settings, treatment guidelines are scattered across textbooks, PDFs, and online resources. When a clinician needs to make a quick decision, searching through multiple sources wastes time and introduces inconsistency in care delivery.",
+        "challenge": "Creating a platform that was fast to navigate, easy to update as medical recommendations evolve, and structured in a way that matched how clinicians actually think during patient care.",
+        "solution": "A platform that centralizes treatment protocols, drug references, and step-by-step management instructions for common conditions — all searchable and organized by disease category so clinicians can find what they need instantly.",
+        "features": [
+          "Searchable treatment protocols organized by disease category",
+          "Step-by-step management instructions for common conditions",
+          "Drug references linked directly to relevant guidelines",
+          "Clean clinician-facing dashboard designed for speed"
+        ],
+        "technicalHighlights": [
+          "Django backend handling all guideline CRUD operations",
+          "PostgreSQL for structured storage of clinical protocols",
+          "Responsive frontend built with HTML and CSS"
+        ],
+        "results": [
+          "Clinicians can access reliable guidelines instantly, reducing decision-making delays",
+          "Standardizes treatment approaches across teams and clinical settings",
+          "Cuts the time spent searching for protocols during active patient care"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "LockedIn",
+      "status": "Completed",
+      "link": "https://lockedin-tracker.vercel.app/",
+      "shortDesc": "A gamified habit tracking app that builds consistency through streaks, visual progress grids, and milestone rewards.",
+      "tags": ["React", "Django", "PostgreSQL", "TailwindCSS"],
+      "details": {
+        "initiative": "Most people struggle to maintain consistent habits not because they lack motivation, but because they lack visibility. Most productivity apps fail because they track tasks, not behavior — users lose momentum because they can't see their progress or feel it building over time.",
+        "challenge": "We needed a system that would gamify daily habit tracking, encouraging users to stay consistent while providing clear visual feedback on their progress. The app had to be intuitive, engaging, and adaptable to different user goals without overwhelming them with complexity.",
+        "solution": "LockedIn is a habit tracking app that rewards users for completing daily tasks through a streak-based system, visually tracking progress on a monthly grid and providing milestone feedback to keep users engaged and motivated.",
+        "features": [
+          "Daily task completion tracking with visual monthly grids",
+          "Gamified streak tiers: Star, Superstar, Champion, Icon",
+          "Analytics comparing current progress with previous months",
+          "Customizable goals across health, productivity, and learning"
+        ],
+        "technicalHighlights": [
+          "Full-stack build with Django REST Framework backend and React frontend",
+          "PostgreSQL for task and user data storage",
+          "Engagement-tracking algorithms to compute streaks and milestone stats",
+          "TailwindCSS for a clean, responsive UI"
+        ],
+        "results": [
+          "Gives users a clear visual picture of their consistency over time",
+          "Gamification encourages long-term habit formation rather than short bursts",
+          "Actionable analytics help users identify patterns and improve their routines"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Connectify",
+      "status": "Completed",
+      "link": "https://github.com/olowojude/Connectify",
+      "shortDesc": "A platform where users create a single personalized landing page to centralize and manage all their online profiles and links.",
+      "tags": ["Django", "React", "PostgreSQL", "TailwindCSS"],
+      "details": {
+        "initiative": "People with multiple online profiles — across social media, portfolios, and professional platforms — often have no single place to point others to. Managing and updating those links separately is disjointed and inefficient.",
+        "challenge": "Building a platform that felt personal and easy to manage, with reliable authentication, profile customization, and account recovery — without making it feel like just another social tool.",
+        "solution": "Connectify gives users a single profile where they can organize and manage all their online links, update their personal information, upload a profile image, and recover their account if they lose access.",
+        "features": [
+          "User authentication and full profile management",
+          "Profile image support",
+          "Password recovery system for easy account access",
+          "Centralized dashboard for managing all links"
+        ],
+        "technicalHighlights": [
+          "Django backend with React frontend",
+          "PostgreSQL for secure user and link storage",
+          "Password hashing and email-based account recovery",
+          "TailwindCSS for a modern, responsive UI"
+        ],
+        "results": [
+          "Users manage all their links and profiles from a single platform instead of updating them separately",
+          "Streamlined account management reduces friction and saves time",
+          "Secure authentication and recovery system gives users confidence in the platform"
+        ],
+        "duration": "2 months",
+        "role": "Full-Stack Developer"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Urswilltastee",
+      "status": "Completed",
+      "link": "https://urswilltastee.xyz",
+      "shortDesc": "A restaurant management platform built to digitize menu browsing, food ordering, and customer interaction for a client's business.",
+      "tags": ["Django", "React", "PostgreSQL", "TailwindCSS"],
+      "details": {
+        "initiative": "A local restaurant looking to grow its customer base needed a digital solution to manage menu browsing, customer orders, and interactions more efficiently than their existing manual process allowed.",
+        "challenge": "Replacing a manual workflow with a digital one without disrupting operations. The system had to be simple enough for staff to use immediately and reliable enough for customers to trust from day one.",
+        "solution": "A full restaurant management platform where customers browse the menu, place orders, and track their order status digitally, while staff manage everything through a simple, purpose-built admin dashboard.",
+        "features": [
+          "Digital menu browsing for customers",
+          "Order placement and real-time status updates",
+          "Admin dashboard for staff to manage incoming orders",
+          "Clean, mobile-friendly interface"
+        ],
+        "technicalHighlights": [
+          "Django backend for order and menu management",
+          "React frontend for a responsive customer experience",
+          "PostgreSQL for order and menu data storage",
+          "TailwindCSS for clean UI design"
+        ],
+        "results": [
+          "Reduced order errors and improved overall speed of service",
+          "Gave customers a better experience through easy, accessible menu browsing",
+          "Streamlined staff workflow and reduced day-to-day operational friction"
+        ],
+        "duration": "2 months",
+        "role": "Full-Stack Developer"
+      }
+    },
+    {
+      "id": 6,
+      "title": "FYB Flyer Generator",
+      "status": "Completed",
+      "link": "https://fyb-signout.vercel.app/",
+      "shortDesc": "A flyer generation tool built specifically for Final Year Biochemistry students to create personalized celebration flyers without design experience.",
+      "tags": ["React", "Python", "TailwindCSS"],
+      "details": {
+        "initiative": "Every year, graduating students want to share their milestone with a professional-looking flyer but don't have access to design tools or the skills to use them. For FYBs specifically, this was a recurring, unmet need with no purpose-built solution.",
+        "challenge": "Building something specific enough to feel personal to FYBs but flexible enough to let each user make it their own — without requiring any design knowledge or technical skill.",
+        "solution": "A web application where FYBs can generate customized graduation flyers through a simple interface, personalize them with their own details, and download or share them instantly.",
+        "features": [
+          "Customizable templates designed specifically for FYB graduations",
+          "Text editing and personal detail customization",
+          "Export flyers in multiple formats",
+          "Simple interface requiring no design experience"
+        ],
+        "technicalHighlights": [
+          "React frontend for dynamic template editing",
+          "Python backend for template management and export generation",
+          "TailwindCSS for a clean, responsive UI"
+        ],
+        "results": [
+          "Students create professional flyers in minutes with no design skills required",
+          "Eliminated the need for expensive design software for a specific community need",
+          "Delivered something personal and immediately useful to a well-defined group of users"
+        ],
+        "duration": "1 month",
+        "role": "Full-Stack Developer"
+      }
+    }
+  ]
+}

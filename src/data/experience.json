@@ -1,0 +1,60 @@
+{
+  "title": "Professional Experience",
+  "categories": [
+    {
+      "label": "Development",
+      "experiences": [
+        {
+          "role": "Freelance Software Developer",
+          "company": "Remote",
+          "period": "Jan 2023 - Dec 2024",
+          "points": [
+            "Designed and built full-stack web applications for clients and personal projects that meet business goals and , ",
+            "Deployed scalable solutions using modern cloud infrastructure, handling everything from database design to production deployment independently."
+          ]
+        },
+        {
+          "role": "Back End Developer",
+          "company": "HNG Internship",
+          "period": "Oct 2022 - Nov 2022",
+          "points": [
+            "Completed a structured backend internship, building and maintaining server-side logic while collaborating with a team on real-world development challenges.",
+            "Participated in knowledge-sharing sessions and applied industry best practices in a fast-paced, remote team environment."
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Writing & Content",
+      "experiences": [
+        {
+          "role": "Contributing Writer",
+          "company": "freeCodeCamp",
+          "period": "Apr 2025 - Present",
+          "points": [
+            "Authoring educational articles on web development and programming for one of the world's leading technical education platforms, reaching millions of developers globally.",
+            "Translating complex technical concepts into clear, structured tutorials that support learners across different levels of expertise."
+          ]
+        },
+        {
+          "role": "Technical Writer",
+          "company": "Personal Blog",
+          "period": "Oct 2022 - Present",
+          "points": [
+            "Creating in-depth how-to guides and tutorials on tools and frameworks including Django-Tailwind, Glasp, and Pytest, focused on improving developer experience.",
+            "Building a consistent personal brand through long-form technical content that drives organic readership and establishes subject matter authority."
+          ]
+        },
+        {
+          "role": "Content Writer",
+          "company": "Opera News Hub",
+          "period": "Apr 2020 - Sep 2022",
+          "points": [
+            "Produced articles and general interest content reaching a cumulative audience of over 1 million readers across 40+ published pieces.",
+            "Applied SEO techniques to drive organic traffic and maintained consistently high editorial quality and originality throughout the engagement."
+          ]
+        }
+      ]
+    }
+  ]
+}

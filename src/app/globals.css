@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.dark {
+  --bg: #111827;
+  --bg-secondary: #1f2937;
+  --text-primary: #eaeef1;
+  --text-secondary: #94a3b8;
+  --border: #374151;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background-color: var(--bg) !important;
+  color: var(--text-primary) !important;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-crimson), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--text-primary) !important;
+}
+
+/* Nav tabs */
+.inactive-tab {
+  color: var(--text-secondary);
+}
+
+.inactive-tab:hover {
+  color: var(--text-primary);
+}
+
+.active-tab {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  border-bottom: 2px solid var(--text-primary);
+  padding-bottom: 2px;
+}
+
+/* Dark mode overrides */
+.dark .border-gray-200 {
+  border-color: var(--border) !important;
+}
+
+.dark .bg-gray-50,
+.dark .bg-gray-100 {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Writing platform badges in dark mode */
+.dark .bg-green-100 {
+  background-color: #064e3b !important;
+  color: #6ee7b7 !important;
+}
+
+.dark .bg-blue-100 {
+  background-color: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+
+.dark .bg-orange-100 {
+  background-color: #7c2d12 !important;
+  color: #fdba74 !important;
+}
+
+.dark .bg-purple-100 {
+  background-color: #4c1d95 !important;
+  color: #c4b5fd !important;
+}
+
+/* Selection */
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+.dark ::selection {
+  background: #fff;
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }

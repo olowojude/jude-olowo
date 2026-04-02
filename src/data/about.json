@@ -1,0 +1,37 @@
+{
+  "title": "About Me",
+  "paragraphs": [
+    "I'm a software engineer with a passion for creating intelligent, user-focused applications. With over 5 years of experience in full-stack development and AI integration, I've helped businesses transform their operations through thoughtful technology solutions.",
+    "My journey into software development started with a fascination for problem-solving and has evolved into a career focused on building systems that make a real impact. I believe in writing clean, maintainable code and creating products that users genuinely enjoy.",
+    "I'm particularly interested in the intersection of AI and web development, where intelligent systems can be seamlessly integrated into everyday tools to enhance productivity and user experience."
+  ],
+  "skills": {
+    "title": "Technical Skills",
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": "React, Next.js, TypeScript, Tailwind CSS, Vue.js"
+      },
+      {
+        "name": "Backend",
+        "items": "Node.js, Python, FastAPI, PostgreSQL, MongoDB"
+      },
+      {
+        "name": "AI/ML",
+        "items": "OpenAI, LangChain, TensorFlow, RAG, Vector DBs"
+      },
+      {
+        "name": "DevOps",
+        "items": "Docker, AWS, CI/CD, Kubernetes, Redis"
+      },
+      {
+        "name": "Tools",
+        "items": "Git, VS Code, Figma, Postman, Linear"
+      },
+      {
+        "name": "Other",
+        "items": "REST APIs, WebSocket, GraphQL, Microservices"
+      }
+    ]
+  }
+}

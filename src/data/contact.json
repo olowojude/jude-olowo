@@ -1,0 +1,49 @@
+{
+  "title": "Let's Work Together",
+  "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out.",
+  "socialLinks": [
+    {
+      "platform": "email",
+      "url": "mailto:olowojude1@gmail.com",
+      "display": "Olowojude1@gmail.com",
+      "icon": "Mail"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/olowojude/",
+      "display": "Olowojude",
+      "icon": "Github"
+    },
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/jude-olowo/",
+      "display": "Jude Olowo",
+      "icon": "Linkedin"
+    }
+  ],
+  "contactForm": {
+    "title": "Quick Contact",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "rows": 4,
+        "required": true
+      }
+    ],
+    "submitButton": "Send Message"
+  }
+}

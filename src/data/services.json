@@ -1,0 +1,44 @@
+{
+  "title": "What I Offer",
+  "description": "I bring an uncommon combination of clinical knowledge, software development, and technical writing to every project. Here's how I can help:",
+  "services": [
+    {
+      "title": "Full-Stack Web Application Development",
+      "description": "End-to-end development of web applications, from database design and backend logic to responsive frontend interfaces. Comfortable working across the entire stack independently or as part of a team."
+    },
+    {
+      "title": "REST API Design & Development",
+      "description": "Designing and building clean, well-structured REST APIs using Django and FastAPI — including authentication, versioning, error handling, and performance optimization. APIs built to scale."
+    },
+    {
+      "title": "SaaS Product Development",
+      "description": "Building multi-user, subscription-ready web products with role-based access, dashboards, and the infrastructure needed to support a growing user base."
+    },
+    {
+      "title": "API Documentation & Developer Guides",
+      "description": "Writing clear, structured documentation for APIs and developer tools — reference docs, quickstart guides, authentication flows, and code examples that help developers integrate faster."
+    },
+    {
+      "title": "Software & Product Documentation",
+      "description": "Creating user manuals, onboarding guides, and product documentation for both technical and non-technical audiences, including clinical teams using health tech products."
+    },
+    {
+      "title": "Technical Tutorials & Articles",
+      "description": "Writing in-depth tutorials and how-to articles for developer-focused platforms like freeCodeCamp, Hashnode, and Substack. Complex topics, made accessible."
+    },
+    {
+      "title": "Health & Medical Content Writing",
+      "description": "Writing accurate, well-researched health and medical content that bridges the gap between clinical knowledge and general readability — for patient-facing products, healthcare platforms, or medical publications."
+    }
+  ],
+  "workingWithMe": {
+    "title": "Working With Me",
+    "points": [
+      "Clear communication and regular updates throughout every project",
+      "Clean, well-documented, maintainable code built to last",
+      "Solutions designed with scalability and real-world usage in mind",
+      "Writing that is accurate, clear, and tailored to your audience",
+      "Reliable delivery with a focus on meeting deadlines and project goals"
+    ]
+  }
+}
