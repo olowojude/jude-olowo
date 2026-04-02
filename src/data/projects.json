@@ -5,7 +5,7 @@
       "id": 1,
       "title": "RxOra",
       "status": "In Progress",
-      "link": "https://your-protokol-link.com",
+      "link": "https://.com",
       "shortDesc": "A multi-vendor medication marketplace connecting PCN-verified pharmacies with buyers across Nigeria.",
       "tags": ["Next.js", "Supabase", "PostgreSQL", "Cloudinary", "Paystack"],
       "details": {
@@ -38,7 +38,7 @@
       "id": 2,
       "title": "MedGuide NG",
       "status": "Completed",
-      "link": "https://your-protokol-link.com",
+      "link": "https://medguideng.vercel.app/",
       "shortDesc": "A centralized clinical reference platform giving healthcare professionals instant access to evidence-based treatment protocols.",
       "tags": ["Django", "Python", "PostgreSQL", "HTML/CSS"],
       "details": {
@@ -129,7 +129,7 @@
       "id": 5,
       "title": "Urswilltastee",
       "status": "Completed",
-      "link": "https://urswilltastee.xyz",
+      "link": "https://urswilltastee.site",
       "shortDesc": "A restaurant management platform built to digitize menu browsing, food ordering, and customer interaction for a client's business.",
       "tags": ["Django", "React", "PostgreSQL", "TailwindCSS"],
       "details": {
