@@ -36,7 +36,6 @@ export default function Contact() {
         setStatus('success');
         setFormState({ name: '', email: '', message: '' });
       } else {
-        // Formspree returns error details in data.errors
         console.error('Formspree error:', data.errors);
         setStatus('error');
       }
@@ -59,24 +58,9 @@ export default function Contact() {
         {contactData.description}
       </p>
 
-      <div className="space-y-4 mb-8">
-        {contactData.socialLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            className="flex items-center gap-3 transition-colors"
-            style={{ color: 'var(--text-primary)' }}
-            target={link.platform !== 'email' ? '_blank' : undefined}
-            rel={link.platform !== 'email' ? 'noopener noreferrer' : undefined}
-          >
-            {getIcon(link.icon)}
-            <span>{link.display}</span>
-          </a>
-        ))}
-      </div>
-
+      {/* Form */}
       <div
-        className="p-6 rounded"
+        className="p-6 rounded mb-8"
         style={{ backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)' }}
       >
         <h3 className="font-medium mb-4 text-[15px]">{contactData.contactForm.title}</h3>
@@ -153,6 +137,23 @@ export default function Contact() {
             {status === 'loading' ? 'Sending...' : contactData.contactForm.submitButton}
           </button>
         </div>
+      </div>
+
+      {/* Social Links */}
+      <div className="space-y-4">
+        {contactData.socialLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.url}
+            className="flex items-center gap-3 transition-colors"
+            style={{ color: 'var(--text-primary)' }}
+            target={link.platform !== 'email' ? '_blank' : undefined}
+            rel={link.platform !== 'email' ? 'noopener noreferrer' : undefined}
+          >
+            {getIcon(link.icon)}
+            <span>{link.display}</span>
+          </a>
+        ))}
       </div>
     </div>
   );
