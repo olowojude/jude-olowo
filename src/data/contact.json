@@ -1,6 +1,6 @@
 {
   "title": "Let's Work Together",
-  "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out.",
+  "description": "Have an idea you want to turn into a working product? I work with clients and startups to design and build scalable web applications and also create clear, effective technical content. Fill out the form below and let’s get started!",
   "socialLinks": [
     {
       "platform": "email",
@@ -22,7 +22,7 @@
     }
   ],
   "contactForm": {
-    "title": "Quick Contact",
+    "title": "Contact Me",
     "fields": [
       {
         "name": "name",

@@ -7,10 +7,10 @@
         {
           "role": "Freelance Software Developer",
           "company": "Remote",
-          "period": "Jan 2023 - Dec 2024",
+          "period": "Jan 2023 - Present",
           "points": [
-            "Designed and built full-stack web applications for clients and personal projects that meet business goals and , ",
-            "Deployed scalable solutions using modern cloud infrastructure, handling everything from database design to production deployment independently."
+            "Designed and developed scalable web applications and high-performance RESTful APIs, translating client requirements into solutions that aligned with business objectives and user needs.",
+            "Collaborated closely with diverse clients to gather requirements, define scope, and deliver robust, production-ready applications with a focus on performance, usability, and maintainability."
           ]
         },
         {
@@ -18,8 +18,8 @@
           "company": "HNG Internship",
           "period": "Oct 2022 - Nov 2022",
           "points": [
-            "Completed a structured backend internship, building and maintaining server-side logic while collaborating with a team on real-world development challenges.",
-            "Participated in knowledge-sharing sessions and applied industry best practices in a fast-paced, remote team environment."
+            "Completed competitive backend challenges, demonstrating strong problem-solving and technical skills.",
+            "Gained hands-on experience with backend development, API design, and team-based problem-solving in a fast-paced remote environment."
           ]
         }
       ]
@@ -38,10 +38,10 @@
         },
         {
           "role": "Technical Writer",
-          "company": "Personal Blog",
+          "company": "Jude's Blog",
           "period": "Oct 2022 - Present",
           "points": [
-            "Creating in-depth how-to guides and tutorials on tools and frameworks including Django-Tailwind, Glasp, and Pytest, focused on improving developer experience.",
+            "Created in-depth technical articles and step-by-step guides, simplifying complex development concepts into clear, practical content for a diverse audience.",
             "Building a consistent personal brand through long-form technical content that drives organic readership and establishes subject matter authority."
           ]
         },
@@ -50,8 +50,8 @@
           "company": "Opera News Hub",
           "period": "Apr 2020 - Sep 2022",
           "points": [
-            "Produced articles and general interest content reaching a cumulative audience of over 1 million readers across 40+ published pieces.",
-            "Applied SEO techniques to drive organic traffic and maintained consistently high editorial quality and originality throughout the engagement."
+            "Wrote high-quality articles and general interest content that informed and engaged a broad audience, contributing to a cumulative reach of over 1 million readers.",
+            "Authored 40+ original blog articles, leveraging SEO techniques and trend research to drive traffic, increase visibility, and deliver timely, and insightful content."
           ]
         }
       ]

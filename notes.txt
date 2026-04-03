@@ -1,0 +1,4 @@
+"Creates a trusted, verified channel for medication commerce in Nigeria",
+"Reduces the risk of patients purchasing from unverified sources",
+"Gives pharmacies a digital storefront with order management built in",
+"Brings clinical awareness — like prescription flags — into the buying experience from day one"

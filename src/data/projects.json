@@ -27,10 +27,7 @@
           "Paystack webhook integration for payment confirmation and order fulfillment"
         ],
         "results": [
-          "Creates a trusted, verified channel for medication commerce in Nigeria",
-          "Reduces the risk of patients purchasing from unverified sources",
-          "Gives pharmacies a digital storefront with order management built in",
-          "Brings clinical awareness — like prescription flags — into the buying experience from day one"
+          "Pending"
         ]
       }
     },
@@ -52,9 +49,10 @@
           "Clean clinician-facing dashboard designed for speed"
         ],
         "technicalHighlights": [
-          "Django backend handling all guideline CRUD operations",
-          "PostgreSQL for structured storage of clinical protocols",
-          "Responsive frontend built with HTML and CSS"
+          "Built the platform using Next.js and Tailwind CSS for a responsive and fast frontend interface",
+          "Extracted, merged, and processed treatment guideline data from multiple files using custom Python scripts",
+          "Implemented efficient sorting and search functionality to organize protocols by disease category",
+          "Delivered a clinician-facing dashboard optimized for speed and usability, with instant access to guidelines"
         ],
         "results": [
           "Clinicians can access reliable guidelines instantly, reducing decision-making delays",
@@ -81,7 +79,7 @@
           "Customizable goals across health, productivity, and learning"
         ],
         "technicalHighlights": [
-          "Full-stack build with Django REST Framework backend and React frontend",
+          "Full-stack build using Django REST Framework for backend and React for frontend",
           "PostgreSQL for task and user data storage",
           "Engagement-tracking algorithms to compute streaks and milestone stats",
           "TailwindCSS for a clean, responsive UI"

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Lightbulb, Target, Zap, Code } from 'lucide-react';
+import { X, Lightbulb, Target, Zap, Code, ExternalLink } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -23,7 +23,7 @@ export default function ProjectModal({ project, onClose }) {
       >
         {/* Header */}
         <div
-          className="flex justify-between items-start px-6 py-5 flex-shrink-0"
+          className="flex justify-between items-start px-6 py-5 shrink-0"
           style={{borderBottom: '1px solid var(--border)'}}
         >
           <div className="pr-4">
@@ -56,7 +56,7 @@ export default function ProjectModal({ project, onClose }) {
           </div>
           <button
             onClick={onClose}
-            className="flex-shrink-0 mt-1 transition-colors"
+            className="shrink-0 mt-1 transition-colors"
             style={{color: 'var(--text-secondary)'}}
           >
             <X size={20} />
@@ -185,19 +185,6 @@ export default function ProjectModal({ project, onClose }) {
                 </li>
               ))}
             </ul>
-            <div
-              className="mt-5 pt-5 flex gap-6 text-sm"
-              style={{borderTop: '1px solid var(--border)'}}
-            >
-              {/* <div>
-                <span style={{color: 'var(--text-secondary)'}}>Duration: </span>
-                <span style={{color: 'var(--text-primary)'}}>{project.details.duration}</span>
-              </div> */}
-              {/* <div>
-                <span style={{color: 'var(--text-secondary)'}}>Role: </span>
-                <span style={{color: 'var(--text-primary)'}}>{project.details.role}</span>
-              </div> */}
-            </div>
           </div>
 
           <div className="h-2" />
@@ -205,7 +192,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Footer */}
         <div
-          className="flex-shrink-0 px-6 py-4"
+          className="shrink-0 px-6 py-4 flex items-center justify-between gap-3"
           style={{borderTop: '1px solid var(--border)', backgroundColor: 'var(--bg)'}}
         >
           <button
@@ -215,6 +202,19 @@ export default function ProjectModal({ project, onClose }) {
           >
             Close
           </button>
+
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm transition-opacity hover:opacity-70"
+              style={{color: 'var(--text-secondary)'}}
+            >
+              <ExternalLink size={13} />
+              View Live Site
+            </a>
+          )}
         </div>
       </div>
     </div>
