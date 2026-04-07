@@ -65,7 +65,7 @@
       "id": 3,
       "title": "LockedIn",
       "status": "Completed",
-      "link": "https://lockedin-tracker.vercel.app/",
+      "link": "https://staylockedin.vercel.app/",
       "shortDesc": "A gamified habit tracking app that builds consistency through streaks, visual progress grids, and milestone rewards.",
       "tags": ["React", "Django", "PostgreSQL", "TailwindCSS"],
       "details": {
