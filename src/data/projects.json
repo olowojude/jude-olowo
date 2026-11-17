@@ -35,50 +35,32 @@
     },
     {
       "id": 1,
-<<<<<<< HEAD
       "title": "RxOra",
       "featured": true,
       "featuredNote": "Builds trust into medication ordering with pharmacy review and prescription checks.",
       "link": null,
       "shortDesc": "A multi-vendor medication marketplace connecting PCN-verified pharmacies with buyers across Nigeria.",
       "tags": ["Next.js", "Supabase", "PostgreSQL", "Cloudinary", "Paystack"],
-=======
-      "title": "Longivia Health",
-      "status": "In Progress",
-      "link": "",
-      "shortDesc": "A digital health platform helping patients document, track, and understand their health story over time.",
-      "tags": [
-        "Next.js",
-        "Supabase",
-        "PostgreSQL",
-        "Cloudinary"
-      ],
->>>>>>> 912064dcd4e37adc91e70e2161ec99bb89c4146b
       "details": {
-        "initiative": "Healthcare is often experienced in disconnected episodes. Patients visit different healthcare providers, undergo tests, receive treatments, and experience symptoms over time, yet much of their health history remains scattered across paper records, hospital systems, and personal recollection. This makes it difficult to see the bigger picture of their health.",
-        "challenge": "Building a patient-centered platform that makes it easier to maintain a continuous health history over time. The experience needs to make documenting health information simple, organize records into a meaningful timeline, and help patients communicate their health history more effectively without overwhelming them with complex medical data.",
-        "solution": "Longivia Health is a digital health platform designed to help patients build and maintain a continuous record of their health story. By bringing health information and experiences together over time, the platform aims to help users follow changes in their health, keep important information accessible, and develop a clearer picture of their health journey.",
+        "initiative": "Accessing medications in Nigeria is often fragmented — patients visit multiple pharmacies, struggle to find specific drugs, and have no way to verify whether a seller is legitimate. There is no trusted, centralized platform for medication commerce.",
+        "challenge": "Building a marketplace for medications is fundamentally different from building one for regular goods. It requires pharmacy verification, prescription awareness, regulatory compliance, and a user experience that builds trust — not just a storefront.",
+        "solution": "RxOra is a multi-vendor marketplace where only PCN-verified pharmacies can list medications. Buyers can browse, cart, and order with delivery, while an admin layer ensures every seller has been reviewed and approved before they can transact. For prescription-only medications, buyers are required to upload a photo of their prescription before their order can be processed.",
         "features": [
-          "Personal health history management in one centralized platform",
-          "Longitudinal health tracking to document changes over time",
-          "Organized health records for easier access and reference",
-          "Health journey timeline for viewing information across different periods",
-          "A patient-centered interface designed to make health documentation accessible",
-          "Support for more informed conversations between patients and healthcare professionals"
+          "Pharmacy verification layer — sellers must submit PCN license and ID before approval",
+          "Multi-vendor product listings with category and prescription filters",
+          "Prescription upload requirement for POM medications before order processing",
+          "Cart, checkout, and Paystack-powered payments",
+          "Seller dashboard for managing store locations, products, and incoming orders",
+          "Admin panel for reviewing applications, managing users, and overseeing the platform"
         ],
         "technicalHighlights": [
-          "Next.js App Router for a responsive, scalable application",
-          "Supabase authentication and PostgreSQL for managing user accounts and health data",
-          "Row Level Security to help enforce access controls for sensitive health information",
-          "Cloudinary integration for supported health document and image management",
-          "A data structure designed to organize health information chronologically and support longitudinal tracking"
+          "Next.js App Router with SSR and ISR for fast, scalable product pages",
+          "Supabase for authentication, PostgreSQL database, and Row Level Security",
+          "Cloudinary for product images and sensitive document storage",
+          "Paystack webhook integration for payment confirmation and order fulfillment"
         ],
         "results": [
-<<<<<<< HEAD
           "Designed so only reviewed pharmacies can list products, with prescription uploads required for prescription-only medicines."
-=======
-          "In progress"
->>>>>>> 912064dcd4e37adc91e70e2161ec99bb89c4146b
         ]
       }
     },
