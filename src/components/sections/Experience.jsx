@@ -14,7 +14,7 @@ export default function Experience() {
             >
               {category.label}
             </p>
-            <div className="space-y-8">
+            <div className="space-y-8 stagger-children">
               {category.experiences.map((exp, index) => (
                 <div
                   key={index}

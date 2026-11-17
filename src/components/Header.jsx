@@ -35,7 +35,7 @@ export default function Header({ activeTab, setActiveTab }) {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`transition-colors ${activeTab === tab ? 'active-tab' : 'inactive-tab'}`}
+            className={`nav-item ${activeTab === tab ? 'active-tab' : 'inactive-tab'}`}
           >
             {tab}
           </button>

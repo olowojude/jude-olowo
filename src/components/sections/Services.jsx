@@ -41,7 +41,7 @@ export default function Services() {
         >
           Development
         </p>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4 stagger-children">
           {developmentServices.map((service, index) => (
             <div
               key={index}
@@ -73,7 +73,7 @@ export default function Services() {
         >
           Writing & Documentation
         </p>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4 stagger-children">
           {writingServices.map((service, index) => (
             <div
               key={index}

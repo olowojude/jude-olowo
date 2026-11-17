@@ -16,8 +16,8 @@ const crimsonPro = Crimson_Pro({
 });
 
 export const metadata = {
-  title: "Jude Olowo - Portfolio",
-  description: "Pharmacist, Software Developer and Technical Writer",
+  title: "Jude Olowo — Health Tech Software Developer",
+  description: "Pharmacist and software developer building useful healthcare products, APIs, and technical documentation.",
 };
 
 export default function RootLayout({ children }) {

@@ -10,15 +10,23 @@ import Experience from '../components/sections/Experience';
 import Writings from '../components/sections/Writings';
 import Contact from '../components/sections/Contact';
 import ProjectModal from '../components/ProjectModal';
+import projectsData from '../data/projects.json';
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState('Home');
   const [selectedProject, setSelectedProject] = useState(null);
+  const featuredProjects = projectsData.projects.filter((project) => project.featured);
 
   const renderContent = () => {
     switch (activeTab) {
       case 'Home':
-        return <Home />;
+        return (
+          <Home
+            projects={featuredProjects}
+            onProjectClick={setSelectedProject}
+            onNavigate={setActiveTab}
+          />
+        );
       case 'Projects':
         return <Projects onProjectClick={setSelectedProject} />;
       case 'Services':
@@ -30,7 +38,13 @@ export default function Portfolio() {
       case 'Contact':
         return <Contact />;
       default:
-        return <Home />;
+        return (
+          <Home
+            projects={featuredProjects}
+            onProjectClick={setSelectedProject}
+            onNavigate={setActiveTab}
+          />
+        );
     }
   };
 

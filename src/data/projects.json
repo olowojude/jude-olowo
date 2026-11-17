@@ -2,10 +2,42 @@
   "title": "Projects",
   "projects": [
     {
+      "id": 7,
+      "title": "Longivia Health",
+      "featured": true,
+      "featuredNote": "Designed to bring health information together over time and help patients follow their health journey.",
+      "cardOutcome": "Designed to help patients track changes over time and communicate a more complete health history.",
+      "link": null,
+      "shortDesc": "A patient-centered digital health platform for maintaining a longitudinal record of a personal health story.",
+      "tags": ["Next.js", "Supabase", "PostgreSQL", "Cloudinary"],
+      "details": {
+        "initiative": "Healthcare is often experienced in disconnected episodes. Patients visit different healthcare providers, undergo tests, receive treatments, and experience symptoms over time, yet much of their health history remains scattered across paper records, hospital systems, and personal recollection. This makes it difficult to see the bigger picture of their health.",
+        "challenge": "Building a patient-centered platform that makes it easier to maintain a continuous health history over time. The experience needs to make documenting health information simple, organize records into a meaningful timeline, and help patients communicate their health history more effectively without overwhelming them with complex medical data.",
+        "solution": "Longivia Health is a digital health platform designed to help patients build and maintain a continuous record of their health story. By bringing health information and experiences together over time, the platform aims to help users follow changes in their health, keep important information accessible, and develop a clearer picture of their health journey.",
+        "features": [
+          "Personal health history management in one centralized platform",
+          "Longitudinal health tracking to document changes over time",
+          "Organized health records for easier access and reference",
+          "Health journey timeline for viewing information across different periods",
+          "A patient-centered interface designed to make health documentation accessible",
+          "Support for more informed conversations between patients and healthcare professionals"
+        ],
+        "technicalHighlights": [
+          "Next.js App Router for a responsive, scalable application",
+          "Supabase authentication and PostgreSQL for managing user accounts and health data",
+          "Row Level Security to help enforce access controls for sensitive health information",
+          "Cloudinary integration for supported health document and image management",
+          "A data structure designed to organize health information chronologically and support longitudinal tracking"
+        ],
+        "results": ["In progress"]
+      }
+    },
+    {
       "id": 1,
       "title": "RxOra",
-      "status": "In Progress",
-      "link": "https://.com",
+      "featured": true,
+      "featuredNote": "Builds trust into medication ordering with pharmacy review and prescription checks.",
+      "link": null,
       "shortDesc": "A multi-vendor medication marketplace connecting PCN-verified pharmacies with buyers across Nigeria.",
       "tags": ["Next.js", "Supabase", "PostgreSQL", "Cloudinary", "Paystack"],
       "details": {
@@ -27,14 +59,15 @@
           "Paystack webhook integration for payment confirmation and order fulfillment"
         ],
         "results": [
-          "Pending"
+          "Designed so only reviewed pharmacies can list products, with prescription uploads required for prescription-only medicines."
         ]
       }
     },
     {
       "id": 2,
       "title": "MedGuide NG",
-      "status": "Completed",
+      "featured": true,
+      "featuredNote": "Brings searchable protocols, drug references, and step-by-step guidance into one clinician-facing tool.",
       "link": "https://medguideng.vercel.app/",
       "shortDesc": "A centralized clinical reference platform giving healthcare professionals instant access to evidence-based treatment protocols.",
       "tags": ["Django", "Python", "PostgreSQL", "HTML/CSS"],
@@ -55,16 +88,14 @@
           "Delivered a clinician-facing dashboard optimized for speed and usability, with instant access to guidelines"
         ],
         "results": [
-          "Clinicians can access reliable guidelines instantly, reducing decision-making delays",
-          "Standardizes treatment approaches across teams and clinical settings",
-          "Cuts the time spent searching for protocols during active patient care"
+          "Organizes treatment protocols by disease category, with search and linked drug references to make guidance easier to find."
         ]
       }
     },
     {
       "id": 3,
       "title": "LockedIn",
-      "status": "Completed",
+      "featured": false,
       "link": "https://staylockedin.vercel.app/",
       "shortDesc": "A gamified habit tracking app that builds consistency through streaks, visual progress grids, and milestone rewards.",
       "tags": ["React", "Django", "PostgreSQL", "TailwindCSS"],
@@ -85,16 +116,14 @@
           "TailwindCSS for a clean, responsive UI"
         ],
         "results": [
-          "Gives users a clear visual picture of their consistency over time",
-          "Gamification encourages long-term habit formation rather than short bursts",
-          "Actionable analytics help users identify patterns and improve their routines"
+          "Tracks daily completions in a monthly grid and calculates habit streaks, milestone tiers, and month-to-month progress."
         ]
       }
     },
     {
       "id": 4,
       "title": "Connectify",
-      "status": "Completed",
+      "featured": false,
       "link": "https://github.com/olowojude/Connectify",
       "shortDesc": "A platform where users create a single personalized landing page to centralize and manage all their online profiles and links.",
       "tags": ["Django", "React", "PostgreSQL", "TailwindCSS"],
@@ -115,9 +144,7 @@
           "TailwindCSS for a modern, responsive UI"
         ],
         "results": [
-          "Users manage all their links and profiles from a single platform instead of updating them separately",
-          "Streamlined account management reduces friction and saves time",
-          "Secure authentication and recovery system gives users confidence in the platform"
+          "Centralizes profile links with one editable profile, profile image support, authentication, and account recovery."
         ],
         "duration": "2 months",
         "role": "Full-Stack Developer"
@@ -126,7 +153,7 @@
     {
       "id": 5,
       "title": "Urswilltastee",
-      "status": "Completed",
+      "featured": false,
       "link": "https://urswilltastee.site",
       "shortDesc": "A restaurant management platform built to digitize menu browsing, food ordering, and customer interaction for a client's business.",
       "tags": ["Django", "React", "PostgreSQL", "TailwindCSS"],
@@ -147,9 +174,7 @@
           "TailwindCSS for clean UI design"
         ],
         "results": [
-          "Reduced order errors and improved overall speed of service",
-          "Gave customers a better experience through easy, accessible menu browsing",
-          "Streamlined staff workflow and reduced day-to-day operational friction"
+          "Moves menu browsing and order placement online, with order status updates and a staff management dashboard."
         ],
         "duration": "2 months",
         "role": "Full-Stack Developer"
@@ -158,7 +183,7 @@
     {
       "id": 6,
       "title": "FYB Flyer Generator",
-      "status": "Completed",
+      "featured": false,
       "link": "https://fyb-signout.vercel.app/",
       "shortDesc": "A flyer generation tool built specifically for Final Year Biochemistry students to create personalized celebration flyers without design experience.",
       "tags": ["React", "Python", "TailwindCSS"],
@@ -178,9 +203,7 @@
           "TailwindCSS for a clean, responsive UI"
         ],
         "results": [
-          "Students create professional flyers in minutes with no design skills required",
-          "Eliminated the need for expensive design software for a specific community need",
-          "Delivered something personal and immediately useful to a well-defined group of users"
+          "Lets students personalize a graduation flyer template and export a shareable design without design software."
         ],
         "duration": "1 month",
         "role": "Full-Stack Developer"

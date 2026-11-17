@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Lightbulb, Target, Zap, Code, ExternalLink } from 'lucide-react';
+import { X, Lightbulb, Target, Zap, ExternalLink } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -13,13 +13,13 @@ export default function ProjectModal({ project, onClose }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8">
       <div
         className="absolute inset-0 backdrop-blur-sm"
-        style={{backgroundColor: 'rgba(0,0,0,0.4)'}}
+        style={{ backgroundColor: 'rgba(0,0,0,0.4)', animation: 'backdrop-in 180ms ease-out both' }}
         onClick={onClose}
       />
 
       <div
         className="relative w-full max-w-xl h-[90vh] shadow-2xl flex flex-col overflow-hidden rounded-lg"
-        style={{backgroundColor: 'var(--bg)'}}
+        style={{ backgroundColor: 'var(--bg)', animation: 'modal-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both' }}
       >
         {/* Header */}
         <div
@@ -29,29 +29,6 @@ export default function ProjectModal({ project, onClose }) {
           <div className="pr-4">
             <div className="flex items-center gap-3 mb-2">
               <h2 className="text-xl font-medium">{project.title}</h2>
-              {project.status === 'In Progress' && (
-                <span
-                  className="text-xs px-2 py-0.5 rounded-full font-medium"
-                  style={{backgroundColor: '#fef3c7', color: '#92400e'}}
-                >
-                  In Progress
-                </span>
-              )}
-            </div>
-            <div className="flex gap-2 flex-wrap">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-2 py-0.5 text-xs rounded"
-                  style={{
-                    backgroundColor: 'var(--bg-secondary)',
-                    color: 'var(--text-secondary)',
-                    border: '1px solid var(--border)'
-                  }}
-                >
-                  {tag}
-                </span>
-              ))}
             </div>
           </div>
           <button
@@ -135,31 +112,6 @@ export default function ProjectModal({ project, onClose }) {
                 ))}
               </ul>
             </div>
-          </div>
-
-          {/* Technical Highlights */}
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <Code size={16} style={{color: 'var(--text-secondary)'}} />
-              <h3
-                className="text-xs font-semibold uppercase tracking-wide"
-                style={{color: 'var(--text-secondary)'}}
-              >
-                Technical Highlights
-              </h3>
-            </div>
-            <ul className="space-y-2">
-              {project.details.technicalHighlights.map((highlight, idx) => (
-                <li
-                  key={idx}
-                  className="text-[15px] flex items-start gap-2"
-                  style={{color: 'var(--text-primary)'}}
-                >
-                  <span style={{color: 'var(--text-secondary)', marginTop: '2px'}}>•</span>
-                  <span>{highlight}</span>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Results */}
