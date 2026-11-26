@@ -32,9 +32,11 @@ function ProjectGroup({ title, description, projects, onProjectClick }) {
                 <p className="text-[15px]" style={{color: 'var(--text-secondary)'}}>
                   {project.shortDesc}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed" style={{color: 'var(--text-primary)'}}>
-                  {project.featuredNote || project.cardOutcome || project.details.results[0]}
-                </p>
+                {(project.featuredNote || project.cardOutcome) && (
+                  <p className="mt-3 text-sm leading-relaxed" style={{color: 'var(--text-primary)'}}>
+                    {project.featuredNote || project.cardOutcome}
+                  </p>
+                )}
               </div>
               <ArrowRight
                 size={20}
