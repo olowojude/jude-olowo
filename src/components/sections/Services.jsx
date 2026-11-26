@@ -45,7 +45,7 @@ export default function Services() {
           {developmentServices.map((service, index) => (
             <div
               key={index}
-              className="p-6 transition-colors"
+              className="service-card p-6 transition-colors"
               style={{border: '1px solid var(--border)'}}
             >
               <h3
@@ -77,7 +77,7 @@ export default function Services() {
           {writingServices.map((service, index) => (
             <div
               key={index}
-              className="p-6 transition-colors"
+              className="service-card p-6 transition-colors"
               style={{border: '1px solid var(--border)'}}
             >
               <h3
@@ -99,7 +99,7 @@ export default function Services() {
 
       {/* Working With Me */}
       <div
-        className="p-6 rounded"
+        className="surface-card p-6"
         style={{
           backgroundColor: 'var(--bg-secondary)',
           border: '1px solid var(--border)'

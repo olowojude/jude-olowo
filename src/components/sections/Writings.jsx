@@ -19,7 +19,7 @@ export default function Writings() {
           <a
             key={index}
             href={article.link}
-            className="block border border-gray-200 p-6 hover:border-gray-900 transition-colors group"
+            className="writing-card block p-6 group"
           >
             <div className="flex justify-between items-start mb-2">
               <h3 className="font-medium group-hover:text-gray-600 transition-colors text-[15px]">

@@ -22,9 +22,7 @@ export default function Home({ projects, onProjectClick, onNavigate }) {
           <p className="max-w-3xl text-[18px] leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             {homeData.intro}
           </p>
-          <p className="focus-line">
-            <strong>{homeData.focus.join(' · ')}</strong>
-          </p>
+          <p className="focus-line">{homeData.focus.join(' · ')}</p>
         </div>
 
         <div className="flex flex-wrap gap-3 pt-1">

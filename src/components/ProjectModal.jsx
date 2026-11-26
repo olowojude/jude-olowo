@@ -18,7 +18,7 @@ export default function ProjectModal({ project, onClose }) {
       />
 
       <div
-        className="relative w-full max-w-xl h-[90vh] shadow-2xl flex flex-col overflow-hidden rounded-lg"
+        className="relative w-full max-w-xl h-[90vh] shadow-2xl flex flex-col overflow-hidden modal-surface"
         style={{ backgroundColor: 'var(--bg)', animation: 'modal-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both' }}
       >
         {/* Header */}
@@ -90,7 +90,7 @@ export default function ProjectModal({ project, onClose }) {
               {project.details.solution}
             </p>
             <div
-              className="p-4 rounded-lg"
+              className="p-4 rounded-xl"
               style={{backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)'}}
             >
               <h4
@@ -116,7 +116,7 @@ export default function ProjectModal({ project, onClose }) {
 
           {/* Results */}
           <div
-            className="p-6 rounded-lg"
+            className="p-6 rounded-xl"
             style={{backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)'}}
           >
             <h3

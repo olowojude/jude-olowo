@@ -33,7 +33,7 @@ function ProjectGroup({ title, description, projects, onProjectClick }) {
                   {project.shortDesc}
                 </p>
                 <p className="mt-3 text-sm leading-relaxed" style={{color: 'var(--text-primary)'}}>
-                  {project.cardOutcome || project.details.results[0]}
+                  {project.featuredNote || project.cardOutcome || project.details.results[0]}
                 </p>
               </div>
               <ArrowRight

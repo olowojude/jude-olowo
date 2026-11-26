@@ -60,7 +60,7 @@ export default function Contact() {
 
       {/* Form */}
       <div
-        className="p-6 rounded mb-8"
+        className="surface-card p-6 mb-8"
         style={{ backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)' }}
       >
         <h3 className="font-medium mb-4 text-[15px]">{contactData.contactForm.title}</h3>
@@ -99,7 +99,7 @@ export default function Contact() {
                   required={field.required}
                   value={formState[field.name] || ''}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 focus:outline-none transition-colors resize-none text-sm rounded"
+                  className="form-control w-full px-3 py-2 focus:outline-none transition-colors resize-none text-sm"
                   style={{
                     border: '1px solid var(--border)',
                     backgroundColor: 'var(--bg)',
@@ -113,7 +113,7 @@ export default function Contact() {
                   required={field.required}
                   value={formState[field.name] || ''}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 focus:outline-none transition-colors text-sm rounded"
+                  className="form-control w-full px-3 py-2 focus:outline-none transition-colors text-sm"
                   style={{
                     border: '1px solid var(--border)',
                     backgroundColor: 'var(--bg)',
