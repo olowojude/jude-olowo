@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import contactData from '../../data/contact.json';
+import posthog from 'posthog-js';
 
+const isPostHogConfigured = Boolean(
+  process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 const FORMSPREE_ENDPOINT = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`;
 
 export default function Contact() {
@@ -33,13 +37,34 @@ export default function Contact() {
       const data = await res.json();
 
       if (res.ok) {
+        if (isPostHogConfigured) {
+          posthog.capture('contact_form_submitted');
+          posthog.logger.info('contact form submitted', {
+            delivery_status: 'accepted',
+          });
+        }
+
         setStatus('success');
         setFormState({ name: '', email: '', message: '' });
       } else {
+        if (isPostHogConfigured) {
+          posthog.capture('contact_form_submission_failed');
+          posthog.logger.warn('contact form submission rejected', {
+            delivery_status: 'rejected',
+          });
+        }
+
         console.error('Formspree error:', data.errors);
         setStatus('error');
       }
     } catch (err) {
+      if (isPostHogConfigured) {
+        posthog.capture('contact_form_submission_failed');
+        posthog.logger.warn('contact form submission unavailable', {
+          delivery_status: 'unavailable',
+        });
+      }
+
       console.error('Network error:', err);
       setStatus('error');
     }
@@ -70,7 +95,7 @@ export default function Contact() {
             className="mb-4 p-4 rounded text-sm"
             style={{ backgroundColor: '#f0fdf4', color: '#166534', border: '1px solid #bbf7d0' }}
           >
-            Message sent successfully — I'll get back to you soon.
+            Message sent successfully — I&apos;ll get back to you soon.
           </div>
         )}
 
@@ -149,6 +174,11 @@ export default function Contact() {
             style={{ color: 'var(--text-primary)' }}
             target={link.platform !== 'email' ? '_blank' : undefined}
             rel={link.platform !== 'email' ? 'noopener noreferrer' : undefined}
+            onClick={() => {
+              if (isPostHogConfigured) {
+                posthog.capture('contact_link_opened', { platform: link.platform });
+              }
+            }}
           >
             {getIcon(link.icon)}
             <span>{link.display}</span>
