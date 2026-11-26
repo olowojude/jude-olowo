@@ -114,31 +114,6 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           </div>
 
-          {/* Results */}
-          <div
-            className="p-6 rounded-xl"
-            style={{backgroundColor: 'var(--bg-secondary)', border: '1px solid var(--border)'}}
-          >
-            <h3
-              className="text-xs font-semibold uppercase tracking-wide mb-4"
-              style={{color: 'var(--text-secondary)'}}
-            >
-              Impact & Results
-            </h3>
-            <ul className="space-y-3">
-              {project.details.results.map((result, idx) => (
-                <li
-                  key={idx}
-                  className="flex items-start gap-2 text-sm"
-                  style={{color: 'var(--text-primary)'}}
-                >
-                  <span style={{color: '#10b981', marginTop: '2px'}}>✓</span>
-                  <span>{result}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div className="h-2" />
         </div>
 
