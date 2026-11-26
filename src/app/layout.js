@@ -16,7 +16,7 @@ const crimsonPro = Crimson_Pro({
 });
 
 export const metadata = {
-  title: "Jude Olowo — Health Tech Software Developer",
+  title: "Olowo Jude — Health Tech Software Developer",
   description: "Pharmacist and software developer building useful healthcare products, APIs, and technical documentation.",
 };
 
