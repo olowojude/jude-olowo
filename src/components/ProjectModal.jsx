@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { X, Lightbulb, Target, Zap, ExternalLink } from 'lucide-react';
+import posthog from 'posthog-js';
+
+const isPostHogConfigured = Boolean(
+  process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 export default function ProjectModal({ project, onClose }) {
-  if (!project) return null;
-
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = ''; };
@@ -162,6 +165,15 @@ export default function ProjectModal({ project, onClose }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm transition-opacity hover:opacity-70"
               style={{color: 'var(--text-secondary)'}}
+              onClick={() => {
+                if (isPostHogConfigured) {
+                  posthog.capture('project_link_opened', {
+                    project_id: project.id,
+                    link_type: 'live_site',
+                    source: 'case_study_modal',
+                  });
+                }
+              }}
             >
               <ExternalLink size={13} />
               View Live Site

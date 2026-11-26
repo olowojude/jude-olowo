@@ -1,6 +1,10 @@
 import React from 'react';
 import writingsData from '../../data/writings.json';
+import posthog from 'posthog-js';
 
+const isPostHogConfigured = Boolean(
+  process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 const platformStyles = {
   freeCodeCamp: 'platform-neutral',
@@ -20,6 +24,11 @@ export default function Writings() {
             key={index}
             href={article.link}
             className="block border border-gray-200 p-6 hover:border-gray-900 transition-colors group"
+            onClick={() => {
+              if (isPostHogConfigured) {
+                posthog.capture('writing_opened', { platform: article.platform || 'other' });
+              }
+            }}
           >
             <div className="flex justify-between items-start mb-2">
               <h3 className="font-medium group-hover:text-gray-600 transition-colors text-[15px]">

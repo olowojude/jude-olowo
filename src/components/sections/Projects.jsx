@@ -1,6 +1,11 @@
 import React from 'react';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import projectsData from '../../data/projects.json';
+import posthog from 'posthog-js';
+
+const isPostHogConfigured = Boolean(
+  process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN && process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 function ProjectGroup({ title, description, projects, onProjectClick }) {
   return (
@@ -59,6 +64,15 @@ function ProjectGroup({ title, description, projects, onProjectClick }) {
                   className="text-link"
                   style={{color: 'var(--text-secondary)'}}
                   aria-label={`${project.link.includes('github.com') ? 'View source code for' : 'Visit'} ${project.title}`}
+                  onClick={() => {
+                    if (isPostHogConfigured) {
+                      posthog.capture('project_link_opened', {
+                        project_id: project.id,
+                        link_type: project.link.includes('github.com') ? 'source_code' : 'live_site',
+                        source: 'project_list',
+                      });
+                    }
+                  }}
                 >
                   <ExternalLink size={14} />
                   {project.link.includes('github.com') ? 'Source code' : 'Live site'}
